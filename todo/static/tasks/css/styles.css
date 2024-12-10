@@ -71,7 +71,6 @@ a {
     color: white;
 }
 
-/* Общие стили для всех кнопок */
 .button {
   appearance: none;
   background-color: #000000;
@@ -97,10 +96,9 @@ a {
   touch-action: manipulation;
   width: 75%;
   will-change: transform;
-  border-radius: 20px; /* Default border-radius */
+  border-radius: 20px;
 }
 
-/* Состояния по умолчанию для всех кнопок */
 .button:disabled {
   pointer-events: none;
 }
@@ -115,9 +113,8 @@ a {
   transform: translateY(0);
 }
 
-/* Дополнительные стили для кнопки "Add" */
 .add-button {
-  border-radius: 20px 20px 150px 150px; /* Специфическая форма для "Add" */
+  border-radius: 20px 20px 150px 150px;
 }
 
 .back-button {
