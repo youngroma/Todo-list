@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'tasks/css/styles.css' %}">
+</head>
+<body>
+
+    <h1>Tasks</h1>
+    <button class="button"><a href="/add/">Add New Task</a></button>
+    <ul class="tasks">
+        {% for task in tasks %}
+            <li class="task-item">
+                <span class="task-title">{{ task.title }}</span>
+                <a href="{% url 'delete_task' task.id %}" class="delete-button">Delete</a>
+            </li>
+
+
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
